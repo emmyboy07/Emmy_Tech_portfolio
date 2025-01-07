@@ -785,3 +785,39 @@ h2.section-title {
     font-size: 1rem;
     color: #555;
 }
+
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem 1rem;
+        height: auto; /* Adjust height for smaller devices */
+    }
+
+    .hero h1 {
+        font-size: 2.5rem; /* Reduce heading size */
+        margin-bottom: 1rem;
+    }
+
+    .hero h2 {
+        font-size: 1.25rem; /* Adjust subheading size */
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-content {
+        z-index: 2;
+    }
+
+    .cta-button {
+        padding: 0.6rem 1.5rem;
+        font-size: 1rem; /* Adjust button size */
+    }
+
+    .hero-background .circle,
+    .hero-background .square,
+    .hero-background .triangle {
+        display: none; /* Hide background shapes on small screens */
+    }
+}
