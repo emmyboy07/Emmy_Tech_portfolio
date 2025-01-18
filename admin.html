@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Emmy Tech</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Emmy Tech Admin</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Back to Site</a></li>
+                <li><a href="#" id="logout-btn">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="admin-panel">
+        <h1>Admin Panel</h1>
+
+        <section class="admin-section">
+            <h2>Edit Hero Section</h2>
+            <form id="edit-hero-form" class="admin-form">
+                <label for="hero-title">Title:</label>
+                <input type="text" id="hero-title" required>
+
+                <label for="hero-subtitle">Subtitle:</label>
+                <input type="text" id="hero-subtitle" required>
+
+                <button type="submit">Update Hero</button>
+            </form>
+        </section>
+
+        <section class="admin-section">
+            <h2>Edit About Section</h2>
+            <form id="edit-about-form" class="admin-form">
+                <label for="about-content">About Content:</label>
+                <textarea id="about-content" required></textarea>
+
+                <label for="about-image">Profile Image URL:</label>
+                <input type="url" id="about-image" required>
+
+                <button type="submit">Update About</button>
+            </form>
+        </section>
+
+        <section class="admin-section">
+            <h2>Manage Skills</h2>
+            <form id="add-skill-form" class="admin-form">
+                <label for="skill-category">Category:</label>
+                <input type="text" id="skill-category" required>
+
+                <label for="skill-name">Skill Name:</label>
+                <input type="text" id="skill-name" required>
+
+                <button type="submit">Add Skill</button>
+            </form>
+            <ul id="skills-list" class="admin-list">
+                <!-- Skills will be dynamically added here -->
+            </ul>
+        </section>
+
+        <section class="admin-section">
+            <h2>Manage Projects</h2>
+            <form id="add-project-form" class="admin-form">
+                <label for="project-title">Title:</label>
+                <input type="text" id="project-title" required>
+
+                <label for="project-description">Description:</label>
+                <textarea id="project-description" required></textarea>
+
+                <label for="project-image">Image URL:</label>
+                <input type="url" id="project-image" required>
+
+                <label for="project-link">Project Link:</label>
+                <input type="url" id="project-link" required>
+
+                <button type="submit">Add Project</button>
+            </form>
+            <ul id="project-list" class="admin-list">
+                <!-- Projects will be dynamically added here -->
+            </ul>
+        </section>
+
+        <section class="admin-section">
+            <h2>Manage Services</h2>
+            <form id="add-service-form" class="admin-form">
+                <label for="service-title">Title:</label>
+                <input type="text" id="service-title" required>
+
+                <label for="service-description">Description:</label>
+                <textarea id="service-description" required></textarea>
+
+                <label for="service-icon">Icon Class (e.g., fas fa-laptop-code):</label>
+                <input type="text" id="service-icon" required>
+
+                <button type="submit">Add Service</button>
+            </form>
+            <ul id="service-list" class="admin-list">
+                <!-- Services will be dynamically added here -->
+            </ul>
+        </section>
+
+        <section class="admin-section">
+            <h2>Manage Blog Posts</h2>
+            <form id="add-blog-form" class="admin-form">
+                <label for="blog-title">Title:</label>
+                <input type="text" id="blog-title" required>
+
+                <label for="blog-excerpt">Excerpt:</label>
+                <textarea id="blog-excerpt" required></textarea>
+
+                <label for="blog-content">Content:</label>
+                <textarea id="blog-content" required></textarea>
+
+                <label for="blog-image">Image URL:</label>
+                <input type="url" id="blog-image" required>
+
+                <button type="submit">Add Blog Post</button>
+            </form>
+            <ul id="blog-list" class="admin-list">
+                <!-- Blog posts will be dynamically added here -->
+            </ul>
+        </section>
+
+        <section class="admin-section">
+            <h2>Manage Testimonials</h2>
+            <form id="add-testimonial-form" class="admin-form">
+                <label for="testimonial-content">Content:</label>
+                <textarea id="testimonial-content" required></textarea>
+
+                <label for="testimonial-author">Author:</label>
+                <input type="text" id="testimonial-author" required>
+
+                <label for="testimonial-position">Author's Position:</label>
+                <input type="text" id="testimonial-position" required>
+
+                <label for="testimonial-image">Author's Image URL:</label>
+                <input type="url" id="testimonial-image" required>
+
+                <button type="submit">Add Testimonial</button>
+            </form>
+            <ul id="testimonial-list" class="admin-list">
+                <!-- Testimonials will be dynamically added here -->
+            </ul>
+        </section>
+
+        <section class="admin-section">
+            <h2>Edit Contact Information</h2>
+            <form id="edit-contact-form" class="admin-form">
+                <label for="contact-email">Email:</label>
+                <input type="email" id="contact-email" required>
+
+                <label for="contact-phone">Phone:</label>
+                <input type="tel" id="contact-phone" required>
+
+                <label for="contact-address">Address:</label>
+                <input type="text" id="contact-address" required>
+
+                <label for="contact-github">GitHub URL:</label>
+                <input type="url" id="contact-github" required>
+
+                <label for="contact-linkedin">LinkedIn URL:</label>
+                <input type="url" id="contact-linkedin" required>
+
+                <label for="contact-twitter">Twitter URL:</label>
+                <input type="url" id="contact-twitter" required>
+
+                <button type="submit">Update Contact Info</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="public/admin.js"></script>
+    <script src="public/script.js"></script>
+    <script src="public/login.js"></script>
+</body>
+</html>
+
